@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body class="mx-4">
-  <div class="container p-sm-4 py-4 px-3 ">
+<body class="mx-3">
+  <div class="container p-4 ">
     <form class="row g-4 p-sm-4  needs-validation" novalidate>
       
       <div class="col-md-3 col-4">
@@ -37,18 +37,18 @@
       </div>
       <div class="col-md-3 col-4">
         <label for="year" class="form-label fw-medium">YEAR</label>
-        <input type="number" maxlength="4" class="form-control fs-2 shadow-none fw-semibold p-2 px-4" id="year" placeholder="YYYY" required>
+        <input type="number" maxlength="4" class="form-control fs-2 shadow-none fw-semibold p-sm-2 px-sm-4" id="year" placeholder="YYYY" required>
         <div class="invalid-feedback mb-0">
           <p class="feedback-one mb-0"> This field is required </p>
           <p class="feedback-two mb-0" style="display: none;"> Must be in the past </p>
         </div>
       </div>
-      <div class="col-12 d-flex align-items-center justify-content-center">
+      <div class="col-12 d-flex align-items-center justify-content-center position-relative">
         <hr>
-        <button class="btn rounded-circle custom-btn" type="submit"><img src="assets/images/icon-arrow.svg" alt="" class="custom-arrow"></button>
+        <button class="btn rounded-circle custom-btn " type="submit"><img src="assets/images/icon-arrow.svg" alt="" class="custom-arrow"></button>
       </div>
     </form>
-    <div class="px-sm-4 mt-0 mb-3" id="result-div">
+    <div class="px-sm-4 mt-2 mt-sm-0 mb-3" id="result-div">
       <h1 id="cal_years" class=""><span class="me-2">- -</span>years</h1>
       <h1 id="cal_months" class=""><span class="me-2">- -</span>months</h1>
       <h1 id="cal_days" class=""><span class="me-2">- -</span>days</h1>
