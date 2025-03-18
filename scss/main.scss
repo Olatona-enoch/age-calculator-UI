@@ -1,0 +1,98 @@
+/* ## Colors */
+
+:root{
+    /* ### Primary */
+
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$enable-validation-icons: false;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+body {
+    font-family: 'Poppins';
+    background-color: var(--Light-grey);
+    height: 100%;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+.container{
+    background-color: var(--White);
+    max-width: 840px;
+    // justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px 20px  180px 20px;
+   
+
+}
+hr{
+    padding: 0.5px;
+    color: var(--Smokey-grey);
+    background-color: var(--Smokey-grey);
+    width: 100%;
+}
+.custom-btn{
+    background-color: var(--Purple);
+    &:hover{
+        background-color: var(--Off-black);
+    }
+}
+.custom-lightGrey{
+    color: var(--Light-grey);
+}
+label{
+    color: var(--Smokey-grey);
+    letter-spacing: 3px;
+}
+.form-control{
+    border:1.5px solid var(--Light-grey);
+    &:focus{
+        border:1.5px solid var(--Purple);
+    }
+}
+.custom-arrow{
+    // width:90%;
+    // height:90%;
+    object-fit: cover;
+    padding: 10px;
+}
+#result-div{
+    color: var(--Off-black);
+    h1{
+        font-size:90px ;
+        font-weight: bolder;
+
+    }
+    span{
+        color: var(--Purple);
+        transition: .3s ease-in-out;
+
+    }
+}
+@media screen and (max-width:630px) {
+    body{
+        -webkit-text-size-adjust: 50%;
+    }
+}
